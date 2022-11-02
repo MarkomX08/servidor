@@ -1,6 +1,8 @@
 import express from 'express';
 import { Server } from "socket.io";
 import http from 'http';
+
+//obtencion del puerto de conexion del servidor del archivo de enviroment
 import { SERVER_PORT } from '../global/enviroment';
 import * as socket from '../sockets/socket';
 
@@ -24,6 +26,7 @@ export default class Servidorcito {
         this.escucharSockets();
     }
 
+    // creacion de la instancia 
     public static get instance(){
         return this._instance || (this._instance = new this());
     }

@@ -1,6 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+
+//numero del puerto al cual se va a lanzar el servidor
 exports.SERVER_PORT = 4003;
+
+//configuracion de los datos de conexion a la base de datos
 exports.DB_CONFIG = {
     mySqlDataSource: {
         BD_HOST: '127.0.0.1',
