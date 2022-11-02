@@ -7,7 +7,9 @@ export class GraficaData{
     private meses: string[] = [];
     private valores: number[] = [];
     
-    constructor(){
+    constructor(
+
+    ){
         
     }
 

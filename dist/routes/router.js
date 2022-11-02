@@ -18,6 +18,7 @@ var mysql_connector_1 = require("../classes/mysql.connector");
 var router = express_1.Router();
 var grafica = new grafica_1.GraficaData();
 MySQLConnector.init();
+
 router.get('/grafica', function (request, response) {
     response.json(grafica.getGraficaData());
 });
